@@ -1,0 +1,75 @@
+<!--/*
+  Name: Tamara Slone
+  Date: October 29, 2024
+  This is the html for the homepage for PokeLand! You can return to the homepage by clicking the logo.
+*/-->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>PokeLand</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        </head>
+    <body>
+        <header>
+            <div id = "logo-container">
+            <a href ="index.html"><img id = "logo" src = "\images\PokeLandLogo.png" alt="Logo with PokeLand written like the Pokemon Logo. To the right is a red and white pokeball."></a>
+            </div>
+            <div id = "banner"></div>
+            </header>    
+        <main>
+            <img id = "welcomelogo" src = "/images/welcome.png" alt = "Pokemon logo that says welcome to PokeLand!">
+            <p> Dive into the world of PokeLand! A fansite dedicated for Pokemon fans all around the world! Do you think you know every Pokemon? Test your knowledge with our Who's That Pokémon? mini-game and see if you reach the high score!</p>
+            <p>Stay tuned for our upcoming National Dex and Trainer Builder feature, where you’ll be able to create and customize your own Trainer profile, complete with your Pokémon team, favorite items, and more! <strong>Join us on this journey as we continue to grow and add new features to make your Pokémon experience truly legendary!</strong></p>
+            
+            <div id = "pokemonoftheday">
+                <img id="pokeoftheday" src = "../images/Pokeoftheday.png" alt = "Logo with the words Pokemon of the Day written as a Pokemon logo.">
+                <h4>Today's Pokemon of the day is</h4>
+                <p id = "pokeName"></p>
+                <img id = "pokeImage" alt = "Today's Pokemon">
+            </div>
+            
+            <div id = "poke-quiz">
+                <img id = "pokequizimage" src = "../images/pokequizlogo.png" alt ="Image logo that has the works Pokequiz! The words are written in the Pokemon logo font">
+                <p id="question">What is your question here?</p>
+                <div id="options-container">
+                    <button class="option-button" id="option1"></button>
+                    <button class="option-button" id="option2"></button>
+                    <button class="option-button" id="option3"></button>
+                    <button class="option-button" id="option4"></button>
+                    <p id="result"></p> 
+                </div>
+            </div>
+            <div id="whosethatpokemon">
+                <img id="whologo" src="../images/whoselogo.png" alt="Who's That Pokemon logo">
+                <h3>Are you ready to put your Pokemon knowledge to the test? Click the button below to play "Whose that Pokemon!" and see if you can make a high score!</h3>
+                <div id="button-container">
+                    <button id="pageButton"><a href="whothatPokemon.html">Click here to play!</a></button>
+                </div>
+            </div>
+            
+            <img id ="og-logo" src = "../images/pokelogo.png" alt="Pokemon logo with gotta catch them all!">
+            <h4>Never played the Pokemon games before? Don't worry we have you covered!</h4>
+            <h3>What is Pokemon?</h3>
+            <p>Pokemon, also known as "Pocket Monsters" is a video game series created by GameFreak founder and developer Satoshi Tajiri. Realeased in Japan in 1996 with their first game Pokemon Red and Green, introducing players to a world filled with mysterious creatures that could be caught, trained, and battled. Since then, Pokémon has grown into a global phenomenon, spanning games, trading cards, TV shows, movies, and more! Each Pokémon species has unique abilities, types, and personalities, making them fun to collect, train, and bond with. From capturing your first Pokémon to becoming a Champion, the world of Pokémon offers endless adventure, strategy, and friendship. For more information about Pokemon and their games we recommend <a href = "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon">Bulbapedia</a> here for more information.</p>
+            <img id ="pokegames" src = "../images/pokemongames.jpg"></img>
+
+            <p> 
+        
+   
+        </main>
+        <div id = "banner"></div>
+     <footer>
+            <p>This website was created with RESTful PokeAPI. You can find more information <a href="https://pokeapi.co">here</a>.</p>
+            <p>PokeLand logo's were created in textStudio <a href="https://www.textstudio.com/">Font generator</a></p>
+            <p>This is an unofficial Pokémon fan site and is not affiliated with, endorsed, sponsored, or specifically approved by Nintendo, Game Freak, or The Pokémon Company. Pokémon and all related media, trademarks, logos, and characters are the property of Nintendo, Game Freak, and The Pokémon Company. All rights reserved by the respective owners. This site is intended solely for entertainment and informational purposes for Pokémon fans.</p>
+        </footer>
+        <script src="../scripts/index.js"></script> 
+</body>
+</html>
+    
