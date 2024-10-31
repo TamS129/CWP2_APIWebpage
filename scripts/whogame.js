@@ -5,7 +5,6 @@
  */
 
 "use strict";
-//console.log("JavaScript file is loaded correctly!");
 
 const pokeImage = document.getElementById("pokeimage");
 const guessInput = document.getElementById("guess");
@@ -72,11 +71,14 @@ function handleError(error){
 }
 
 
-
+/**
+ * Checks the user's Pokemon name guess. If the answer is correct it will add to the score and give a slight flash to say correct. If the answer
+ * is incorrect the text will shake slightly to tell the user it's wrong.
+ */
 function checkGuess() {
 
     const userGuess = guessInput.value.trim().toLowerCase();
-    
+
     displayResult.classList.remove("highlight-correct", "highlight-incorrect");
 
     if (userGuess === currentPoke.name.toLowerCase()) {
@@ -84,8 +86,8 @@ function checkGuess() {
 
         scoreDisplay.textContent = `Score: ${points}`;
         displayResult.textContent = `Correct! It's ${currentPoke.name}!`;
+
         pokeImage.style.filter = "brightness(1)";
-        
         displayResult.classList.add("highlight-correct");
 
         setTimeout(() => {

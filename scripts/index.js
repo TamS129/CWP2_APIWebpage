@@ -38,9 +38,11 @@ function fetchPokemonOfTheDay() {
 
 function statusCheck(res){
     if(!res.ok){
+
         throw new Error(`Error: ${res.status}`);
     }
     else{
+
         return res;
     }
 }
@@ -95,12 +97,14 @@ let score = 0;
  */
 function loadQuizQuest() {
     const currQuest = questions[currQuestIndex];
+
     const quest = document.getElementById("question");
     const optButton = document.querySelectorAll(".option-button");
 
     quest.textContent = currQuest.question;
 
     optButton.forEach((button, index) => {
+
         button.textContent = currQuest.options[index];
         button.onclick = () => checkAnswer(currQuest.options[index]);
     });
@@ -111,6 +115,7 @@ function loadQuizQuest() {
  * @param {Option Selected} optionSel The choice that the user makes while playing the PokeQuiz game
  */
 function checkAnswer(optionSel) {
+    
     const currentQuestion = questions[currQuestIndex];
     const result = document.getElementById("result");
 
